@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1565C0">
+
+    <!-- Navbar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <!-- Logo bleu -->
+        <ImageView
+            android:id="@+id/navbar_logo"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/baseline_call_24"
+            android:tint="#1565C0"
+            android:contentDescription="@string/app_name" />
+
+        <!-- Titre (optionnel, si tu veux le nom de l'app dans la navbar) -->
+        <TextView
+            android:id="@+id/navbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CallerApp"
+            android:textColor="#1565C0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"
+            android:fontFamily="sans-serif-medium"/>
+    </LinearLayout>
+
+    <!-- Contenu centré -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <!-- Titre principal -->
+        <TextView
+            android:id="@+id/TextAcceuil_acceuil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accueil"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="32dp"
+            android:gravity="center"/>
+
+        <!-- Boutons -->
+        <Button
+            android:id="@+id/btnAjout_acceuil"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Ajouter"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:padding="12dp"
+            android:background="@drawable/rounded_button"/>
+
+        <Button
+            android:id="@+id/btnAff_acceuil"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Afficher"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:padding="12dp"
+            android:background="@drawable/rounded_button"/>
+
+        <Button
+            android:id="@+id/btnDeconn_acceuil"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Déconnecter"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:padding="12dp"
+            android:background="@drawable/rounded_button"/>
+
+        <Button
+            android:id="@+id/btnCancel_acceuil"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Annuler"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-medium"
+            android:padding="12dp"
+            android:background="@drawable/rounded_button"/>
+    </LinearLayout>
+
+</LinearLayout>
